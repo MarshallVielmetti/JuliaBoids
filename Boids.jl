@@ -139,7 +139,7 @@ boids = Boids(NUM_BOIDS)
 
 timestamps = range(0, SECONDS, step=1 / FRAMERATE)
 
-record(fig, "randimation.mp4", timestamps; framerate = FRAMERATE) do i
+record(fig, "animation.mp4", timestamps; framerate = FRAMERATE) do i
     empty!(ax)
     iterateBoids!(boids)
     # tans = atan.(boids.yv ./ boids.xv)
